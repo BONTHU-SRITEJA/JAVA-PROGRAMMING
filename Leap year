@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int year=in.nextInt();
+        int lp=0;
+        int rem;
+        int c=0;
+        while(c<15){
+           if ((year%400==0)|| (year%4==0 && year%100!=0)){
+              
+               System.out.print(year);
+               c++;
+               if (c!=15)
+                    System.out.print(", ");
+           }
+            
+            year++;
+      }
+    }
+}
